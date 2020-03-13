@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: registry
+
+eureka:
+  client:
+    # 表示是否注册自身到eureka服务器
+    register-with-eureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://10.29.194.35:8761/eureka/,http://10.81.45.189:8762/eureka/
+  server:
+    enable-self-preservation: false
